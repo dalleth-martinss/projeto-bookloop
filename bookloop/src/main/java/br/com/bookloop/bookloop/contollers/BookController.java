@@ -56,7 +56,7 @@ public class BookController {
         }
     }
 
-    // DELETE - Deletar livro
+    // DELETE - Deletar livro, dado a um Id. Retorna 204 se deletado com sucesso, 404 se não encontrado
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteBook(@PathVariable Integer id) {
         try {
